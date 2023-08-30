@@ -1,0 +1,525 @@
+[
+  {
+    "profile": {
+      "company": {
+        "name": "Apple Inc.",
+        "address": "One Apple Park Way",
+        "citystatezip": "Cupertino, CA 95014",
+        "country": "United States",
+        "phone": "408 996 1010",
+        "site": "https://www.apple.com"
+      },
+      "sector": { "Sector(s)": "Technology", "Industry": "Consumer Electronics", "Full Time Employees": "164,000" }
+    }
+  },
+  {
+    "2023-08-30": [
+      {
+        "summary": {
+          "stock_symbol": "AAPL",
+          "market_price": "187.65",
+          "market_change": "+3.53",
+          "market_percent": "0.019172274",
+          "Previous Close": "184.12",
+          "Open": "184.94",
+          "Bid": "187.65 x 1000",
+          "Ask": "187.69 x 1000",
+          "Day's Range": "184.74 - 187.79",
+          "52 Week Range": "124.17 - 198.23",
+          "Volume": "59,225,736",
+          "Avg. Volume": "57,031,017",
+          "Market Cap": "2.934T",
+          "Beta (5Y Monthly)": "1.29",
+          "PE Ratio (TTM)": "31.43",
+          "EPS (TTM)": "5.97",
+          "Earnings Date": "Oct 25, 2023 - Oct 30, 2023",
+          "Forward Dividend & Yield": "0.96 (0.52%)",
+          "Ex-Dividend Date": "May 12, 2023",
+          "1y Target Est": "200.68"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "2.88T",
+          "Enterprise Value": "2.93T",
+          "Trailing P/E": "30.89",
+          "Forward P/E": "27.70",
+          "PEG Ratio (5 yr expected)": "2.35",
+          "Price/Sales (ttm)": "7.64",
+          "Price/Book (mrq)": "47.76",
+          "Enterprise Value/Revenue": "7.62",
+          "Enterprise Value/EBITDA": "23.06"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "387,537,000",
+            "Cost of Revenue": "220,666,000",
+            "Gross Profit": "166,871,000",
+            "Operating Expense": "52,906,000",
+            "Operating Income": "113,965,000",
+            "Net Non Operating Interest Income Expense": "-197,000",
+            "Other Income Expense": "-283,000",
+            "Pretax Income": "113,485,000",
+            "Tax Provision": "18,314,000",
+            "Net Income Common Stockholders": "95,171,000",
+            "Diluted NI Available to Com Stockholders": "95,171,000",
+            "Total Operating Income as Reported": "113,965,000",
+            "Total Expenses": "273,572,000",
+            "Net Income from Continuing & Discontinued Operation": "95,171,000",
+            "Normalized Income": "95,171,000",
+            "Interest Income": "3,043,000",
+            "Interest Expense": "3,240,000",
+            "Net Interest Income": "-197,000",
+            "EBIT": "116,725,000",
+            "EBITDA": "128,048,000",
+            "Reconciled Cost of Revenue": "220,666,000",
+            "Reconciled Depreciation": "11,323,000",
+            "Net Income from Continuing Operation Net Minority Interest": "95,171,000",
+            "Normalized EBITDA": "128,048,000",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "0"
+          },
+          "balance": {
+            "Total Assets": "352,755,000",
+            "Total Liabilities Net Minority Interest": "302,083,000",
+            "Total Equity Gross Minority Interest": "50,672,000",
+            "Total Capitalization": "149,631,000",
+            "Common Stock Equity": "50,672,000",
+            "Net Tangible Assets": "50,672,000",
+            "Working Capital": "-18,577,000",
+            "Invested Capital": "170,741,000",
+            "Tangible Book Value": "50,672,000",
+            "Total Debt": "120,069,000",
+            "Net Debt": "96,423,000",
+            "Share Issued": "15,943,425",
+            "Ordinary Shares Number": "15,943,425"
+          },
+          "cash": {
+            "Operating Cash Flow": "109,190,000",
+            "Investing Cash Flow": "-7,693,000",
+            "Financing Cash Flow": "-118,153,000",
+            "End Cash Position": "21,974,000",
+            "Income Tax Paid Supplemental Data": "15,166,000",
+            "Interest Paid Supplemental Data": "3,037,000",
+            "Capital Expenditure": "-11,692,000",
+            "Issuance of Capital Stock": "-",
+            "Issuance of Debt": "10,693,000",
+            "Repayment of Debt": "-18,158,000",
+            "Repurchase of Capital Stock": "-88,399,000",
+            "Free Cash Flow": "97,498,000"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "2023-08-29": [
+      {
+        "summary": {
+          "stock_symbol": "AAPL",
+          "market_price": "184.12",
+          "market_change": "+3.93",
+          "market_percent": "0.02181027",
+          "Previous Close": "180.19",
+          "Open": "179.70",
+          "Bid": "184.45 x 900",
+          "Ask": "184.56 x 1200",
+          "Day's Range": "179.50 - 184.90",
+          "52 Week Range": "124.17 - 198.23",
+          "Volume": "50,544,969",
+          "Avg. Volume": "57,031,017",
+          "Market Cap": "2.879T",
+          "Beta (5Y Monthly)": "1.29",
+          "PE Ratio (TTM)": "30.89",
+          "EPS (TTM)": "5.96",
+          "Earnings Date": "Oct 25, 2023 - Oct 30, 2023",
+          "Forward Dividend & Yield": "0.96 (0.53%)",
+          "Ex-Dividend Date": "May 12, 2023",
+          "1y Target Est": "200.68"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "2.82T",
+          "Enterprise Value": "2.86T",
+          "Trailing P/E": "30.23",
+          "Forward P/E": "27.10",
+          "PEG Ratio (5 yr expected)": "2.30",
+          "Price/Sales (ttm)": "7.47",
+          "Price/Book (mrq)": "46.74",
+          "Enterprise Value/Revenue": "7.46",
+          "Enterprise Value/EBITDA": "22.57"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "387,537,000",
+            "Cost of Revenue": "220,666,000",
+            "Gross Profit": "166,871,000",
+            "Operating Expense": "52,906,000",
+            "Operating Income": "113,965,000",
+            "Net Non Operating Interest Income Expense": "-197,000",
+            "Other Income Expense": "-283,000",
+            "Pretax Income": "113,485,000",
+            "Tax Provision": "18,314,000",
+            "Net Income Common Stockholders": "95,171,000",
+            "Diluted NI Available to Com Stockholders": "95,171,000",
+            "Total Operating Income as Reported": "113,965,000",
+            "Total Expenses": "273,572,000",
+            "Net Income from Continuing & Discontinued Operation": "95,171,000",
+            "Normalized Income": "95,171,000",
+            "Interest Income": "3,043,000",
+            "Interest Expense": "3,240,000",
+            "Net Interest Income": "-197,000",
+            "EBIT": "116,725,000",
+            "EBITDA": "128,048,000",
+            "Reconciled Cost of Revenue": "220,666,000",
+            "Reconciled Depreciation": "11,323,000",
+            "Net Income from Continuing Operation Net Minority Interest": "95,171,000",
+            "Normalized EBITDA": "128,048,000",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "0"
+          },
+          "balance": {
+            "Total Assets": "352,755,000",
+            "Total Liabilities Net Minority Interest": "302,083,000",
+            "Total Equity Gross Minority Interest": "50,672,000",
+            "Total Capitalization": "149,631,000",
+            "Common Stock Equity": "50,672,000",
+            "Net Tangible Assets": "50,672,000",
+            "Working Capital": "-18,577,000",
+            "Invested Capital": "170,741,000",
+            "Tangible Book Value": "50,672,000",
+            "Total Debt": "120,069,000",
+            "Net Debt": "96,423,000",
+            "Share Issued": "15,943,425",
+            "Ordinary Shares Number": "15,943,425"
+          },
+          "cash": {
+            "Operating Cash Flow": "109,190,000",
+            "Investing Cash Flow": "-7,693,000",
+            "Financing Cash Flow": "-118,153,000",
+            "End Cash Position": "21,974,000",
+            "Income Tax Paid Supplemental Data": "15,166,000",
+            "Interest Paid Supplemental Data": "3,037,000",
+            "Capital Expenditure": "-11,692,000",
+            "Issuance of Capital Stock": "-",
+            "Issuance of Debt": "10,693,000",
+            "Repayment of Debt": "-18,158,000",
+            "Repurchase of Capital Stock": "-88,399,000",
+            "Free Cash Flow": "97,498,000"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "2023-08-28": [
+      {
+        "summary": {
+          "stock_symbol": "AAPL",
+          "market_price": "180.19",
+          "market_change": "+1.58",
+          "market_percent": "0.0088460995",
+          "Previous Close": "178.61",
+          "Open": "180.09",
+          "Bid": "180.33 x 1400",
+          "Ask": "180.35 x 1200",
+          "Day's Range": "178.54 - 180.59",
+          "52 Week Range": "124.17 - 198.23",
+          "Volume": "39,522,558",
+          "Avg. Volume": "57,302,140",
+          "Market Cap": "2.817T",
+          "Beta (5Y Monthly)": "1.29",
+          "PE Ratio (TTM)": "30.18",
+          "EPS (TTM)": "5.97",
+          "Earnings Date": "Oct 25, 2023 - Oct 30, 2023",
+          "Forward Dividend & Yield": "0.96 (0.54%)",
+          "Ex-Dividend Date": "May 12, 2023",
+          "1y Target Est": "185.89"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "2.79T",
+          "Enterprise Value": "2.84T",
+          "Trailing P/E": "29.97",
+          "Forward P/E": "26.88",
+          "PEG Ratio (5 yr expected)": "2.27",
+          "Price/Sales (ttm)": "7.41",
+          "Price/Book (mrq)": "46.33",
+          "Enterprise Value/Revenue": "7.40",
+          "Enterprise Value/EBITDA": "22.38"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "387,537,000",
+            "Cost of Revenue": "220,666,000",
+            "Gross Profit": "166,871,000",
+            "Operating Expense": "52,906,000",
+            "Operating Income": "113,965,000",
+            "Net Non Operating Interest Income Expense": "-197,000",
+            "Other Income Expense": "-283,000",
+            "Pretax Income": "113,485,000",
+            "Tax Provision": "18,314,000",
+            "Net Income Common Stockholders": "95,171,000",
+            "Diluted NI Available to Com Stockholders": "95,171,000",
+            "Total Operating Income as Reported": "113,965,000",
+            "Total Expenses": "273,572,000",
+            "Net Income from Continuing & Discontinued Operation": "95,171,000",
+            "Normalized Income": "95,171,000",
+            "Interest Income": "3,043,000",
+            "Interest Expense": "3,240,000",
+            "Net Interest Income": "-197,000",
+            "EBIT": "116,725,000",
+            "EBITDA": "128,048,000",
+            "Reconciled Cost of Revenue": "220,666,000",
+            "Reconciled Depreciation": "11,323,000",
+            "Net Income from Continuing Operation Net Minority Interest": "95,171,000",
+            "Normalized EBITDA": "128,048,000",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "0"
+          },
+          "balance": {
+            "Total Assets": "352,755,000",
+            "Total Liabilities Net Minority Interest": "302,083,000",
+            "Total Equity Gross Minority Interest": "50,672,000",
+            "Total Capitalization": "149,631,000",
+            "Common Stock Equity": "50,672,000",
+            "Net Tangible Assets": "50,672,000",
+            "Working Capital": "-18,577,000",
+            "Invested Capital": "170,741,000",
+            "Tangible Book Value": "50,672,000",
+            "Total Debt": "120,069,000",
+            "Net Debt": "96,423,000",
+            "Share Issued": "15,943,425",
+            "Ordinary Shares Number": "15,943,425"
+          },
+          "cash": {
+            "Operating Cash Flow": "109,190,000",
+            "Investing Cash Flow": "-7,693,000",
+            "Financing Cash Flow": "-118,153,000",
+            "End Cash Position": "21,974,000",
+            "Income Tax Paid Supplemental Data": "15,166,000",
+            "Interest Paid Supplemental Data": "3,037,000",
+            "Capital Expenditure": "-11,692,000",
+            "Issuance of Capital Stock": "-",
+            "Issuance of Debt": "10,693,000",
+            "Repayment of Debt": "-18,158,000",
+            "Repurchase of Capital Stock": "-88,399,000",
+            "Free Cash Flow": "97,498,000"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "2023-08-27": [
+      {
+        "summary": {
+          "stock_symbol": "AAPL",
+          "market_price": "178.61",
+          "market_change": "+2.23",
+          "market_percent": "0.012643132",
+          "Previous Close": "176.38",
+          "Open": "177.38",
+          "Bid": "178.57 x 1300",
+          "Ask": "178.58 x 800",
+          "Day's Range": "175.82 - 179.15",
+          "52 Week Range": "124.17 - 198.23",
+          "Volume": "51,449,594",
+          "Avg. Volume": "57,302,140",
+          "Market Cap": "2.792T",
+          "Beta (5Y Monthly)": "1.29",
+          "PE Ratio (TTM)": "29.92",
+          "EPS (TTM)": "5.97",
+          "Earnings Date": "Oct 25, 2023 - Oct 30, 2023",
+          "Forward Dividend & Yield": "0.96 (0.54%)",
+          "Ex-Dividend Date": "May 12, 2023",
+          "1y Target Est": "200.68"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "2.79T",
+          "Enterprise Value": "2.84T",
+          "Trailing P/E": "29.97",
+          "Forward P/E": "26.88",
+          "PEG Ratio (5 yr expected)": "2.27",
+          "Price/Sales (ttm)": "7.41",
+          "Price/Book (mrq)": "46.33",
+          "Enterprise Value/Revenue": "7.40",
+          "Enterprise Value/EBITDA": "22.38"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "387,537,000",
+            "Cost of Revenue": "220,666,000",
+            "Gross Profit": "166,871,000",
+            "Operating Expense": "52,906,000",
+            "Operating Income": "113,965,000",
+            "Net Non Operating Interest Income Expense": "-197,000",
+            "Other Income Expense": "-283,000",
+            "Pretax Income": "113,485,000",
+            "Tax Provision": "18,314,000",
+            "Net Income Common Stockholders": "95,171,000",
+            "Diluted NI Available to Com Stockholders": "95,171,000",
+            "Total Operating Income as Reported": "113,965,000",
+            "Total Expenses": "273,572,000",
+            "Net Income from Continuing & Discontinued Operation": "95,171,000",
+            "Normalized Income": "95,171,000",
+            "Interest Income": "3,043,000",
+            "Interest Expense": "3,240,000",
+            "Net Interest Income": "-197,000",
+            "EBIT": "116,725,000",
+            "EBITDA": "128,048,000",
+            "Reconciled Cost of Revenue": "220,666,000",
+            "Reconciled Depreciation": "11,323,000",
+            "Net Income from Continuing Operation Net Minority Interest": "95,171,000",
+            "Normalized EBITDA": "128,048,000",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "0"
+          },
+          "balance": {
+            "Total Assets": "352,755,000",
+            "Total Liabilities Net Minority Interest": "302,083,000",
+            "Total Equity Gross Minority Interest": "50,672,000",
+            "Total Capitalization": "149,631,000",
+            "Common Stock Equity": "50,672,000",
+            "Net Tangible Assets": "50,672,000",
+            "Working Capital": "-18,577,000",
+            "Invested Capital": "170,741,000",
+            "Tangible Book Value": "50,672,000",
+            "Total Debt": "120,069,000",
+            "Net Debt": "96,423,000",
+            "Share Issued": "15,943,425",
+            "Ordinary Shares Number": "15,943,425"
+          },
+          "cash": {
+            "Operating Cash Flow": "109,190,000",
+            "Investing Cash Flow": "-7,693,000",
+            "Financing Cash Flow": "-118,153,000",
+            "End Cash Position": "21,974,000",
+            "Income Tax Paid Supplemental Data": "15,166,000",
+            "Interest Paid Supplemental Data": "3,037,000",
+            "Capital Expenditure": "-11,692,000",
+            "Issuance of Capital Stock": "-",
+            "Issuance of Debt": "10,693,000",
+            "Repayment of Debt": "-18,158,000",
+            "Repurchase of Capital Stock": "-88,399,000",
+            "Free Cash Flow": "97,498,000"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "2023-08-26": [
+      {
+        "summary": {
+          "stock_symbol": "AAPL",
+          "market_price": "178.61",
+          "market_change": "+2.23",
+          "market_percent": "0.012643132",
+          "Previous Close": "176.38",
+          "Open": "177.38",
+          "Bid": "178.53 x 1300",
+          "Ask": "178.48 x 800",
+          "Day's Range": "175.82 - 179.15",
+          "52 Week Range": "124.17 - 198.23",
+          "Volume": "45,650,607",
+          "Avg. Volume": "57,302,140",
+          "Market Cap": "2.792T",
+          "Beta (5Y Monthly)": "1.29",
+          "PE Ratio (TTM)": "29.92",
+          "EPS (TTM)": "5.97",
+          "Earnings Date": "Oct 25, 2023 - Oct 30, 2023",
+          "Forward Dividend & Yield": "0.96 (0.54%)",
+          "Ex-Dividend Date": "May 12, 2023",
+          "1y Target Est": "185.83"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "2.79T",
+          "Enterprise Value": "2.84T",
+          "Trailing P/E": "29.97",
+          "Forward P/E": "26.88",
+          "PEG Ratio (5 yr expected)": "2.27",
+          "Price/Sales (ttm)": "7.41",
+          "Price/Book (mrq)": "46.33",
+          "Enterprise Value/Revenue": "7.40",
+          "Enterprise Value/EBITDA": "22.38"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "387,537,000",
+            "Cost of Revenue": "220,666,000",
+            "Gross Profit": "166,871,000",
+            "Operating Expense": "52,906,000",
+            "Operating Income": "113,965,000",
+            "Net Non Operating Interest Income Expense": "-197,000",
+            "Other Income Expense": "-283,000",
+            "Pretax Income": "113,485,000",
+            "Tax Provision": "18,314,000",
+            "Net Income Common Stockholders": "95,171,000",
+            "Diluted NI Available to Com Stockholders": "95,171,000",
+            "Total Operating Income as Reported": "113,965,000",
+            "Total Expenses": "273,572,000",
+            "Net Income from Continuing & Discontinued Operation": "95,171,000",
+            "Normalized Income": "95,171,000",
+            "Interest Income": "3,043,000",
+            "Interest Expense": "3,240,000",
+            "Net Interest Income": "-197,000",
+            "EBIT": "116,725,000",
+            "EBITDA": "128,048,000",
+            "Reconciled Cost of Revenue": "220,666,000",
+            "Reconciled Depreciation": "11,323,000",
+            "Net Income from Continuing Operation Net Minority Interest": "95,171,000",
+            "Normalized EBITDA": "128,048,000",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "0"
+          },
+          "balance": {
+            "Total Assets": "352,755,000",
+            "Total Liabilities Net Minority Interest": "302,083,000",
+            "Total Equity Gross Minority Interest": "50,672,000",
+            "Total Capitalization": "149,631,000",
+            "Common Stock Equity": "50,672,000",
+            "Net Tangible Assets": "50,672,000",
+            "Working Capital": "-18,577,000",
+            "Invested Capital": "170,741,000",
+            "Tangible Book Value": "50,672,000",
+            "Total Debt": "120,069,000",
+            "Net Debt": "96,423,000",
+            "Share Issued": "15,943,425",
+            "Ordinary Shares Number": "15,943,425"
+          },
+          "cash": {
+            "Operating Cash Flow": "109,190,000",
+            "Investing Cash Flow": "-7,693,000",
+            "Financing Cash Flow": "-118,153,000",
+            "End Cash Position": "21,974,000",
+            "Income Tax Paid Supplemental Data": "15,166,000",
+            "Interest Paid Supplemental Data": "3,037,000",
+            "Capital Expenditure": "-11,692,000",
+            "Issuance of Capital Stock": "-",
+            "Issuance of Debt": "10,693,000",
+            "Repayment of Debt": "-18,158,000",
+            "Repurchase of Capital Stock": "-88,399,000",
+            "Free Cash Flow": "97,498,000"
+          }
+        }
+      }
+    ]
+  }
+]

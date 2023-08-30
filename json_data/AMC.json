@@ -1,0 +1,229 @@
+[
+  {
+    "profile": {
+      "company": {
+        "name": "AMC Entertainment Holdings, Inc.",
+        "address": "11500 Ash Street",
+        "citystatezip": "Leawood, KS 66211",
+        "country": "United States",
+        "phone": "913 213 2000",
+        "site": "https://www.amctheatres.com"
+      },
+      "sector": { "Sector(s)": "Communication Services", "Industry": "Entertainment", "Full Time Employees": "2,787" }
+    }
+  },
+  {
+    "2023-08-30": [
+      {
+        "summary": {
+          "stock_symbol": "AMC",
+          "market_price": "12.73",
+          "market_change": "+1.82",
+          "market_percent": "0.166819",
+          "Previous Close": "10.91",
+          "Open": "11.10",
+          "Bid": "12.70 x 800",
+          "Ask": "12.71 x 1400",
+          "Day's Range": "10.73 - 13.64",
+          "52 Week Range": "10.72 - 94.85",
+          "Volume": "54,404,891",
+          "Avg. Volume": "5,521,044",
+          "Market Cap": "749.056M",
+          "Beta (5Y Monthly)": "1.93",
+          "PE Ratio (TTM)": "N/A",
+          "EPS (TTM)": "-5.65",
+          "Earnings Date": "Nov 06, 2023 - Nov 10, 2023",
+          "Forward Dividend & Yield": "N/A (N/A)",
+          "Ex-Dividend Date": "Mar 06, 2020",
+          "1y Target Est": "20.08"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "641.96M",
+          "Enterprise Value": "9.71B",
+          "Trailing P/E": "N/A",
+          "Forward P/E": "N/A",
+          "PEG Ratio (5 yr expected)": "N/A",
+          "Price/Sales (ttm)": "0.36",
+          "Price/Book (mrq)": "0.18",
+          "Enterprise Value/Revenue": "2.28",
+          "Enterprise Value/EBITDA": "184.65"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "3,911,400",
+            "Cost of Revenue": "1,280,300",
+            "Gross Profit": "2,631,100",
+            "Operating Expense": "2,992,200",
+            "Operating Income": "-361,100",
+            "Net Non Operating Interest Income Expense": "-378,700",
+            "Other Income Expense": "-231,300",
+            "Pretax Income": "-971,100",
+            "Tax Provision": "2,500",
+            "Net Income Common Stockholders": "-973,600",
+            "Diluted NI Available to Com Stockholders": "-973,600",
+            "Total Operating Income as Reported": "-522,300",
+            "Rent Expense Supplemental": "886,200",
+            "Total Expenses": "4,272,500",
+            "Net Income from Continuing & Discontinued Operation": "-973,600",
+            "Normalized Income": "-835,420",
+            "Interest Expense": "378,700",
+            "Net Interest Income": "-378,700",
+            "EBIT": "-592,400",
+            "EBITDA": "-196,400",
+            "Reconciled Cost of Revenue": "1,280,300",
+            "Reconciled Depreciation": "396,000",
+            "Net Income from Continuing Operation Net Minority Interest": "-973,600",
+            "Total Unusual Items Excluding Goodwill": "-230,300",
+            "Total Unusual Items": "-230,300",
+            "Normalized EBITDA": "33,900",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "-92,120"
+          },
+          "balance": {
+            "Total Assets": "9,135,600",
+            "Total Liabilities Net Minority Interest": "11,760,100",
+            "Total Equity Gross Minority Interest": "-2,624,500",
+            "Total Capitalization": "-2,624,500",
+            "Preferred Stock Equity": "100",
+            "Common Stock Equity": "-2,624,500",
+            "Capital Lease Obligations": "58,800",
+            "Net Tangible Assets": "-2,624,500",
+            "Working Capital": "-788,200",
+            "Invested Capital": "2,516,200",
+            "Tangible Book Value": "-2,624,500",
+            "Total Debt": "58,800",
+            "Net Debt": "4,509,300",
+            "Share Issued": "783,162",
+            "Ordinary Shares Number": "783,162",
+            "Treasury Shares Number": "-"
+          },
+          "cash": {
+            "Operating Cash Flow": "-628,500",
+            "Investing Cash Flow": "-224,000",
+            "Financing Cash Flow": "-91,300",
+            "End Cash Position": "654,400",
+            "Income Tax Paid Supplemental Data": "800",
+            "Interest Paid Supplemental Data": "379,000",
+            "Capital Expenditure": "-219,800",
+            "Issuance of Capital Stock": "220,400",
+            "Issuance of Debt": "1,318,000",
+            "Repayment of Debt": "-1,449,400",
+            "Repurchase of Capital Stock": "-",
+            "Free Cash Flow": "-848,300"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "2023-08-29": [
+      {
+        "summary": {
+          "stock_symbol": "AMC",
+          "market_price": "10.91",
+          "market_change": "-0.16",
+          "market_percent": "-0.014453465",
+          "Previous Close": "11.07",
+          "Open": "11.24",
+          "Bid": "10.93 x 800",
+          "Ask": "10.97 x 4000",
+          "Day's Range": "10.72 - 11.70",
+          "52 Week Range": "10.72 - 107.50",
+          "Volume": "27,016,542",
+          "Avg. Volume": "5,098,903",
+          "Market Cap": "641.964M",
+          "Beta (5Y Monthly)": "1.93",
+          "PE Ratio (TTM)": "N/A",
+          "EPS (TTM)": "-5.11",
+          "Earnings Date": "Nov 06, 2023 - Nov 10, 2023",
+          "Forward Dividend & Yield": "N/A (N/A)",
+          "Ex-Dividend Date": "Mar 06, 2020",
+          "1y Target Est": "20.08"
+        }
+      },
+      {
+        "stats": {
+          "Market Cap (intraday)": "651.38M",
+          "Enterprise Value": "9.72B",
+          "Trailing P/E": "N/A",
+          "Forward P/E": "N/A",
+          "PEG Ratio (5 yr expected)": "N/A",
+          "Price/Sales (ttm)": "0.37",
+          "Price/Book (mrq)": "0.18",
+          "Enterprise Value/Revenue": "2.28",
+          "Enterprise Value/EBITDA": "184.83"
+        }
+      },
+      {
+        "financials": {
+          "income": {
+            "Total Revenue": "3,911,400",
+            "Cost of Revenue": "1,280,300",
+            "Gross Profit": "2,631,100",
+            "Operating Expense": "2,992,200",
+            "Operating Income": "-361,100",
+            "Net Non Operating Interest Income Expense": "-378,700",
+            "Other Income Expense": "-231,300",
+            "Pretax Income": "-971,100",
+            "Tax Provision": "2,500",
+            "Net Income Common Stockholders": "-973,600",
+            "Diluted NI Available to Com Stockholders": "-973,600",
+            "Total Operating Income as Reported": "-522,300",
+            "Rent Expense Supplemental": "886,200",
+            "Total Expenses": "4,272,500",
+            "Net Income from Continuing & Discontinued Operation": "-973,600",
+            "Normalized Income": "-835,420",
+            "Interest Expense": "378,700",
+            "Net Interest Income": "-378,700",
+            "EBIT": "-592,400",
+            "EBITDA": "-196,400",
+            "Reconciled Cost of Revenue": "1,280,300",
+            "Reconciled Depreciation": "396,000",
+            "Net Income from Continuing Operation Net Minority Interest": "-973,600",
+            "Total Unusual Items Excluding Goodwill": "-230,300",
+            "Total Unusual Items": "-230,300",
+            "Normalized EBITDA": "33,900",
+            "Tax Rate for Calcs": "0",
+            "Tax Effect of Unusual Items": "-92,120"
+          },
+          "balance": {
+            "Total Assets": "9,135,600",
+            "Total Liabilities Net Minority Interest": "11,760,100",
+            "Total Equity Gross Minority Interest": "-2,624,500",
+            "Total Capitalization": "-2,624,500",
+            "Preferred Stock Equity": "100",
+            "Common Stock Equity": "-2,624,500",
+            "Capital Lease Obligations": "58,800",
+            "Net Tangible Assets": "-2,624,500",
+            "Working Capital": "-788,200",
+            "Invested Capital": "2,516,200",
+            "Tangible Book Value": "-2,624,500",
+            "Total Debt": "58,800",
+            "Net Debt": "4,509,300",
+            "Share Issued": "783,162",
+            "Ordinary Shares Number": "783,162",
+            "Treasury Shares Number": "-"
+          },
+          "cash": {
+            "Operating Cash Flow": "-628,500",
+            "Investing Cash Flow": "-224,000",
+            "Financing Cash Flow": "-91,300",
+            "End Cash Position": "654,400",
+            "Income Tax Paid Supplemental Data": "800",
+            "Interest Paid Supplemental Data": "379,000",
+            "Capital Expenditure": "-219,800",
+            "Issuance of Capital Stock": "220,400",
+            "Issuance of Debt": "1,318,000",
+            "Repayment of Debt": "-1,449,400",
+            "Repurchase of Capital Stock": "-",
+            "Free Cash Flow": "-848,300"
+          }
+        }
+      }
+    ]
+  }
+]
