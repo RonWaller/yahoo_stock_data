@@ -41,13 +41,13 @@ def main():
             # * if "stock.json" exsists skip profile function but run others
             path = Path("json_data", f"{stock}.json")
 
-            if path.is_file():
+            if not path.is_file():
                 profile(page, stock)  # data from profile tab
 
             summary(page, stock)  # data from summary tab
             stats(page, stock)  # data from statistics tab
             financials(page, stock)  # data financials tab
-            json_data(today, path)
+            json_data(today, path)  # save data to json file
         # * close browswer
         page.close()
 
@@ -272,6 +272,7 @@ def json_data(today, path):
 
     if path.is_file():
         with path.open(mode="r", encoding="utf-8") as file:
+            # * place json data in results list
             results = json.load(file)
             file.close()
 
@@ -284,8 +285,6 @@ def json_data(today, path):
 
         # * check if todays date in saved data. true skip false add new data
         if today not in date_list:
-            # * place old data in results list
-            # results.append(old_data)
             # * insert data into list at index#
             results.insert(1, {today: stock_data})
             # * write data to json file
