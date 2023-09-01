@@ -11,8 +11,10 @@ from selectolax.parser import HTMLParser
 
 # //TODO:
 
-stock_results = []
-stock_data = []
+# * single stock
+# STOCKS = ["F"]
+# * make list of stocks
+STOCKS = ["AAPL", "AMC", "AMZN", "F", "GOOGL", "MSFT"]
 
 
 def main():
@@ -29,31 +31,34 @@ def main():
         )
         page = context.new_page()
         page.set_default_timeout(120000)
-        # * single stock
-        # stocks = ["AAPL"]
-        # * make list of stocks
-        stocks = ["AAPL", "AMC", "AMZN", "F", "GOOGL", "MSFT"]
-        today = str(date.today())
-        for stock in stocks:
+
+        for stock in STOCKS:
             print(stock)
-            stock_results.clear()
-            stock_data.clear()
-            # * if "stock.json" exsists skip profile function but run others
-            path = Path("json_data", f"{stock}.json")
+            process_stocks(page, stock)
 
-            if not path.is_file():
-                profile(page, stock)  # data from profile tab
-
-            summary(page, stock)  # data from summary tab
-            stats(page, stock)  # data from statistics tab
-            financials(page, stock)  # data financials tab
-            json_data(today, path)  # save data to json file
         # * close browswer
         page.close()
 
 
+def process_stocks(page, stock):
+    """Get all of the stock data from Yahoo Finance"""
+    # * if "stock.json" exsists skip profile function but run others
+    path = Path("json_data", f"{stock}.json")
+
+    stock_data = []
+    stock_results = []
+    if not path.is_file():
+        stock_results.append(profile(page, stock))  # data from profile tab
+
+    stock_data.append(summary(page, stock))  # data from summary tab
+    stock_data.append(stats(page, stock))  # data from statistics tab
+    stock_data.append(financials(page, stock))  # data financials tab
+
+    json_data(path, stock_data, stock_results)  # save data to json file
+
+
 def profile(page, stock):
-    """summary"""
+    """Get stock profile data on yahoo finance"""
     print("Scraping Profile Data....")
     try:
         profile_dict = {}
@@ -70,11 +75,11 @@ def profile(page, stock):
     except PlaywrightTimeoutError:
         print("Timeout")
 
-    stock_results.append({"profile": profile_dict})
+    return {"profile": profile_dict}
 
 
 def company_details(data) -> dict:
-    """summary"""
+    """Parse html to gather company info"""
     company_name = data.css_first("h3").text()
     company_info = data.css_first("p").text(separator="*")
     company_list = company_info.split("*")
@@ -100,7 +105,7 @@ def company_details(data) -> dict:
 
 
 def company_sector_data(company_profile_data) -> dict:
-    """summary"""
+    """Parse html to gather company sector data"""
     for item in company_profile_data:
         sector_key = item.css("span")[0].text()
         sector_value = item.css("span")[1].text()
@@ -119,7 +124,7 @@ def company_sector_data(company_profile_data) -> dict:
 
 
 def summary(page, stock):
-    """summary"""
+    """Get stock summary data on yahoo finance"""
     print("Scraping Summary Data....")
     try:
         stock_dict = {}
@@ -155,11 +160,11 @@ def summary(page, stock):
     except PlaywrightTimeoutError:
         print("Timeout")
 
-    stock_data.append({"summary": stock_dict})
+    return {"summary": stock_dict}
 
 
 def stats(page, stock):
-    """summary"""
+    """Get stock statistics data on yahoo finance"""
     print("Scraping Statistics Data....")
     try:
         stats_dict = {}
@@ -177,11 +182,11 @@ def stats(page, stock):
     except PlaywrightTimeoutError:
         print("Timeout")
 
-    stock_data.append({"stats": stats_dict})
+    return {"stats": stats_dict}
 
 
 def financials(page, stock):
-    """summary"""
+    """Get stock financal data on yahoo finance"""
     print("Scraping Financials Data....")
 
     financial_dict = {}
@@ -193,11 +198,11 @@ def financials(page, stock):
     financial_dict.update({"balance": balance_data})
     financial_dict.update({"cash": cash_data})
 
-    stock_data.append({"financials": financial_dict})
+    return {"financials": financial_dict}
 
 
 def income(page, stock) -> dict:
-    """summary"""
+    """Get stock income statement data on yahoo finance"""
     print("Scraping Income Data....")
     try:
         income_dict = {}
@@ -218,7 +223,7 @@ def income(page, stock) -> dict:
 
 
 def balance(page, stock) -> dict:
-    """summary"""
+    """Get stock balance sheet data on yahoo finance"""
     print("Scraping Balance Data....")
     try:
         balance_dict = {}
@@ -241,7 +246,7 @@ def balance(page, stock) -> dict:
 
 
 def cash(page, stock) -> dict:
-    """summary"""
+    """Get stock cash flow data on yahoo finance"""
     print("Scraping Cash Flow Data....")
     try:
         cash_dict = {}
@@ -261,13 +266,12 @@ def cash(page, stock) -> dict:
     return cash_dict
 
 
-def json_data(today, path):
-    """summary"""
+def json_data(path, stock_data, stock_results):
+    """Parse the stock data, save to json file"""
     print("Creating JSON data files....")
-    # path = f"./json_data/{stock}.json"
-    # file_in_folder = os.path.isfile(path)
-    results = []
 
+    results = []
+    today = str(date.today())
     # * check for json file and get previous data
 
     if path.is_file():
