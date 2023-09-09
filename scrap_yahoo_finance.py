@@ -1,6 +1,6 @@
-"""Playwright scrape Yahoo Finance. Selectorlax to parse HTML. Create JSON files"""
+"""Playwright scrape Yahoo Finance. Selectorlax to parse HTML.
+Create JSON files"""
 import json
-import re
 from datetime import date
 from pathlib import Path
 
@@ -12,7 +12,7 @@ from selectolax.parser import HTMLParser
 # //TODO:
 
 # * single stock
-# STOCKS = ["F"]
+# STOCKS = ["AAPL"]
 # * make list of stocks
 STOCKS = ["AAPL", "AMC", "AMZN", "F", "GOOGL", "MSFT"]
 
@@ -43,39 +43,37 @@ def main():
 def process_stocks(page, stock):
     """Get all of the stock data from Yahoo Finance"""
     # * if "stock.json" exsists skip profile function but run others
-    path = Path("json_data", f"{stock}.json")
-
-    stock_data = []
+    # * change path to new stock_data and stock folder
+    path = Path(f"stock_data/{stock}", f"{stock}.json")
     stock_results = []
+
+    # * if no .json file run profile & quarterly_info
     if not path.is_file():
+        path.parent.mkdir(exist_ok=True, parents=True)
         stock_results.append(profile(page, stock))  # data from profile tab
 
-    stock_data.append(summary(page, stock))  # data from summary tab
-    stock_data.append(stats(page, stock))  # data from statistics tab
-    stock_data.append(financials(page, stock))  # data financials tab
+    summary_data = summary(page, stock)  # data from summary tab
 
-    json_data(path, stock_data, stock_results)  # save data to json file
+    # *  save data to json file
+    json_data(path, stock_results, summary_data)
 
 
 def profile(page, stock):
     """Get stock profile data on yahoo finance"""
     print("Scraping Profile Data....")
     try:
-        profile_dict = {}
         url_profile = "https://finance.yahoo.com/quote/{}/profile?p={}"
         page.goto(url_profile.format(stock, stock), timeout=0)
         html = page.inner_html("div[data-test='qsp-profile']")
         data = HTMLParser(html)
         info = company_details(data)
-        profile_dict.update({"company": info})
-        company_profile_data = data.css("p:nth-child(2)")
-        sector = company_sector_data(company_profile_data)
-        profile_dict.update({"sector": sector})
+        sector = company_sector_data(data)
+        company = info | sector
 
     except PlaywrightTimeoutError:
         print("Timeout")
 
-    return {"profile": profile_dict}
+    return {"company": company}
 
 
 def company_details(data) -> dict:
@@ -104,8 +102,9 @@ def company_details(data) -> dict:
     return company
 
 
-def company_sector_data(company_profile_data) -> dict:
+def company_sector_data(data) -> dict:
     """Parse html to gather company sector data"""
+    company_profile_data = data.css("p:nth-child(2)")
     for item in company_profile_data:
         sector_key = item.css("span")[0].text()
         sector_value = item.css("span")[1].text()
@@ -133,8 +132,8 @@ def summary(page, stock):
         page.goto(url_summary.format(stock, stock), timeout=0)
         html = page.inner_html("div#quote-header-info")
         data = HTMLParser(html)
-        stock_name = data.css_first("h1").text()
-        stock_symbol = re.search(r"\(([^)]+)", stock_name).group(1)
+        # stock_name = data.css_first("h1").text()
+        # stock_symbol = re.search(r"\(([^)]+)", stock_name).group(1)
         market_price = data.css_first(
             "fin-streamer[data-test='qsp-price']"
         ).text()
@@ -144,7 +143,7 @@ def summary(page, stock):
         market_price_regchange = data.css_first(
             "fin-streamer[data-field='regularMarketChangePercent']"
         ).attrs["value"]
-        stock_dict.update({"stock_symbol": stock_symbol})
+        stock_dict.update({"stock_symbol": stock})
         stock_dict.update({"market_price": market_price})
         stock_dict.update({"market_change": market_price_change})
         stock_dict.update({"market_percent": market_price_regchange})
@@ -163,122 +162,24 @@ def summary(page, stock):
     return {"summary": stock_dict}
 
 
-def stats(page, stock):
-    """Get stock statistics data on yahoo finance"""
-    print("Scraping Statistics Data....")
-    try:
-        stats_dict = {}
-        url_stats = "https://finance.yahoo.com/quote/{}/key-statistics?p={}"
-        page.goto(url_stats.format(stock, stock), timeout=0)
-        html = page.inner_html("div#Main")
-        data = HTMLParser(html)
-        stats_info = data.css_first("table")
-        stats_table = stats_info.css("tbody tr")
-        for row in stats_table:
-            key = row.css_first("td").text().strip()
-            value = row.css("td")[1].text()
-            stats_dict.update({key: value})
-
-    except PlaywrightTimeoutError:
-        print("Timeout")
-
-    return {"stats": stats_dict}
-
-
-def financials(page, stock):
-    """Get stock financal data on yahoo finance"""
-    print("Scraping Financials Data....")
-
-    financial_dict = {}
-    income_data = income(page, stock)
-    balance_data = balance(page, stock)
-    cash_data = cash(page, stock)
-
-    financial_dict.update({"income": income_data})
-    financial_dict.update({"balance": balance_data})
-    financial_dict.update({"cash": cash_data})
-
-    return {"financials": financial_dict}
-
-
-def income(page, stock) -> dict:
-    """Get stock income statement data on yahoo finance"""
-    print("Scraping Income Data....")
-    try:
-        income_dict = {}
-        url_financials = "https://finance.yahoo.com/quote/{}/financials?p={}"
-        page.goto(url_financials.format(stock, stock), timeout=0)
-        html = page.inner_html("div#Main")
-        data = HTMLParser(html)
-        income_info = data.css("div[data-test='fin-row']")
-        for item in income_info:
-            key = item.css_first("span").text()
-            value = item.css_first("div[data-test='fin-col']").text()
-            income_dict.update({key: value})
-
-    except PlaywrightTimeoutError:
-        print("Timeout")
-
-    return income_dict
-
-
-def balance(page, stock) -> dict:
-    """Get stock balance sheet data on yahoo finance"""
-    print("Scraping Balance Data....")
-    try:
-        balance_dict = {}
-        url_financials = (
-            "https://finance.yahoo.com/quote/{}/balance-sheet?p={}"
-        )
-        page.goto(url_financials.format(stock, stock), timeout=0)
-        html = page.inner_html("div#Main")
-        data = HTMLParser(html)
-        balance_info = data.css("div[data-test='fin-row']")
-        for item in balance_info:
-            key = item.css_first("span").text()
-            value = item.css_first("div[data-test='fin-col']").text()
-            balance_dict.update({key: value})
-
-    except PlaywrightTimeoutError:
-        print("Timeout")
-
-    return balance_dict
-
-
-def cash(page, stock) -> dict:
-    """Get stock cash flow data on yahoo finance"""
-    print("Scraping Cash Flow Data....")
-    try:
-        cash_dict = {}
-        url_financials = "https://finance.yahoo.com/quote/{}/cash-flow?p={}"
-        page.goto(url_financials.format(stock, stock), timeout=0)
-        html = page.inner_html("div#Main")
-        data = HTMLParser(html)
-        cash_info = data.css("div[data-test='fin-row']")
-        for item in cash_info:
-            key = item.css_first("span").text()
-            value = item.css_first("div[data-test='fin-col']").text()
-            cash_dict.update({key: value})
-
-    except PlaywrightTimeoutError:
-        print("Timeout")
-
-    return cash_dict
-
-
-def json_data(path, stock_data, stock_results):
+def json_data(path, stock_results, summary_data):
     """Parse the stock data, save to json file"""
     print("Creating JSON data files....")
 
     results = []
     today = str(date.today())
+    # * insert new quarterly data
+    # * results[1]["quarterly"][0]
+    # * insert {date & data} to quarterly list
+    # * insert quarterly list into results list
+    # results.insert(1, quarterly_data)
+
     # * check for json file and get previous data
 
     if path.is_file():
         with path.open(mode="r", encoding="utf-8") as file:
             # * place json data in results list
             results = json.load(file)
-            file.close()
 
         date_list = []
 
@@ -290,21 +191,20 @@ def json_data(path, stock_data, stock_results):
         # * check if todays date in saved data. true skip false add new data
         if today not in date_list:
             # * insert data into list at index#
-            results.insert(1, {today: stock_data})
+            results.insert(2, {today: summary_data})
             # * write data to json file
             with path.open(mode="w", encoding="utf-8") as file:
                 file.write(json.dumps(results))
-                file.close()
+
         else:
             print("No New Data....")
 
     else:
         # * append new stock data to list
-        stock_results.append({today: stock_data})
+        stock_results.append({today: summary_data})
         # * write data to json file
         with path.open(mode="w", encoding="utf-8") as file:
             file.write(json.dumps(stock_results))
-            file.close()
 
 
 if __name__ == "__main__":
